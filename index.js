@@ -1,8 +1,8 @@
-import express, { json } from 'express';
+const express = require('express')
 const app = express()
 const port = 3000
 
-app.use(json());
+app.use(express.json());
 
 const USERS = [];
 const QUESTIONS = [{
